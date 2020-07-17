@@ -1,0 +1,1 @@
+OTHER_OPTS='--server -a alsa -m alsa_seq -r 48000 -z 480 -c 1 -v -g 6 /home/pi/midi/sf2/Mine/vibraphone/vibes_musser_m46.sf2
