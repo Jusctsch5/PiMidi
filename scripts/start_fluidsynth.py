@@ -17,7 +17,8 @@ for line in out.splitlines():
       os.kill(pid, signal.SIGKILL)
 
 # Determine options. TODO Look for cookie files and override defaults if they exist
-default_options="--server -i -a alsa -m alsa_seq -r 48000 -z 480 -c 1 -v -g 10"
+# default soundfonts can be found here/usr/share/soundfonts/FluidR3_GM.sf2
+default_options="--server -i -a alsa -m alsa_seq -r 48000 -z 960 -c 1 -v -g 8"
 default_instrument = "../sf2/general_midi/FluidR3_GM.sf2"
 
 # subprocess.call("cp ../fluidsynth_config/" + conf_file + " /etc/conf.d/fluidsynth", shell=True)
@@ -28,8 +29,3 @@ print("Running cmd:" + fluidsynth_cmd)
 subprocess.call(fluidsynth_cmd, shell=True)
 time.sleep(5)
 
-# Attach fluidsynth to MIDI interface
-aconnect_cmd = "aconnect 20 128"
-print("Running cmd:" + aconnect_cmd)
-subprocess.call(aconnect_cmd, shell=True)
-subprocess.call("aconnect -l", shell=True)
