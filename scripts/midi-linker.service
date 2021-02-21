@@ -1,0 +1,13 @@
+[Unit]
+Description=MIDI Device Linker
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/home/pi/PiMidi/scripts/midi_device_linker.py
+WorkingDirectory=/home/pi/PiMidi/
+User=pi
+
+[Install]
+WantedBy=multi-user.target
+

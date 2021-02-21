@@ -2,3 +2,4 @@ share/
 share/*
 share
 sf2/general_midi/FluidR3_GM.sf2
+*.log

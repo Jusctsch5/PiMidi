@@ -1,0 +1,13 @@
+[Unit]
+Description=Starts fluidsynth
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/home/pi/PiMidi/scripts/start_fluid_synth.py
+WorkingDirectory=/home/pi/PiMidi/
+User=pi
+
+[Install]
+WantedBy=multi-user.target
+
