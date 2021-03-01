@@ -7,7 +7,7 @@ import logging
 
 # Determine options. TODO Look for cookie files and override defaults if they exist
 # default soundfonts can be found here /usr/share/soundfonts/FluidR3_GM.sf2
-default_options="--server -i -a alsa -m alsa_seq -r 48000 -z 960 -c 1 -v -g 8"
+default_options="--server -i -a alsa -m alsa_seq -r 48000 -z 960 -c 1 -v -g 4"
 default_instrument = "/home/pi/PiMidi/sf2/general_midi/FluidR3_GM.sf2"
 log_file = "/home/pi/PiMidi/logs/start_fluid_synth.log"
 
